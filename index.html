@@ -1,193 +1,47 @@
-<div class="hero">
-  <nav>
-    <h2 class="logo">Portfo<span>lio</span></h2>
-    <ul>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <a href="#" class="btn">Subscribe</a>
-  </nav>
-  <div class="content">
-    <h4>Hello, my name is</h4>
-    <h1>Leyla <span>Memmedova</span></h1>
-    <h3>I am a Web Developer</h3>
-    <div class="newslatter">
-      <form>
-        <input type="email" id="mail" name="email" placeholder="Enter your gmail">
-        <input type="submit" name="submit" value="lets start">
-      </form>
-    </div>
-  </div>
-  <div class="share">
-    <p>Lets Connect</p>
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
-  </div>
-</div>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Jure's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ian Jure</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-@import
- url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ian Jure, a passionate web developer with experience in creating dynamic and responsive websites.</p>
+    </section>
 
-* {
-  padding:0;
-  margin:0;
-  font-family: 'Josefin Sans', sans-serif;
-  box-sizing:border-box;
-}
-.hero {
-  height:100vh;
-  width:100%;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7fZoNxiz4pA3q-R9KvUD1M6ibdhxC0TLvA&usqp=CAU");
-  background-size:cover;
-  background-position:center;
-}
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+    </section>
 
-nav {
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-  padding-top:45px;
-  padding-left:8%;
-  padding-right:8%;
-}
-.logo {
-  color:white;
-  cursor:pointer;
-  font-size:35px;
-  letter-spacing:1px;
-}
-span {
-  color: #f9004d;
-}
-nav ul li {
-  display:inline-block;
-  list-style-type:none;
-  padding:10px 30px;
-}
-nav ul li a {
-  color:white;
-  text-decoration:none;
-  
-}
-nav ul li a:hover{
-  color:#f9004d;
-  transition:.4s;
-}
-.btn {
-  background-color:#f9004d;
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-  border:2px solid transparent;
-  padding:10px 25px;
-  border-radius:30px;
-  transition:transform .4s;
-}
-.btn:hover {
-  transform:scale(1.1);
-}
-.content {
-  position:absolute;
-  top:50%;
-  left:8%;
-  transform:translateY(-50%);
-  
-}
-h1 {
-  color:white;
-  margin:20px 0px 20px;
-  font-size:60px;
-}
-h3 {
-  color:white;
-  font-size:25px;
-  margin-bottom:50px;
-}
-h4 {
-  color:#585c63;
-  font-size:20px;
-  letter-spacing:2px;
-  
-}
-.newslatter form{
-  width:380px;
-  max-width:100%;
-  position:relative;
-  
-}
-.newslatter form input:first-child{
-  display:inline-block;
-  width:100%;
-  padding:14px 130px 14px 15px;
-  border:2px solid #f9004d;
-  border-radius:30px;
-  outline:none;
-}
-.newslatter form input:last-child{
-  position:absolute;
-  display:inline-block;
-  border:none;
-  outline:none;
-  padding:10px 30px;
-  border-radius:30px;
-  background-color:#f9004d;
-  color:white;
-  cursor:pointer;
-  box-shadow: 0px 0px 5px #000, 0px 0px 15px #868686;
-  top:6px;
-  right:6px;
-  
-}
-.share {
-  position:absolute;
-  top:90%;
-  left:8%;
-  display:flex;
-  flex-wrap:nowrap;
-  justify-content: flex-start;
-  align-items:center;
-}
-.share p {
-  font-size:17px;
-  color:white;
-  margin-right:60px;
-}
-.share .social a {
-  display:inline-block;
-  color:white;
-  margin-right:15px;
-  transform:transition .4s;
-}
-.share .social a:hover {
-  transform: scale(1.2);
-}
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ian@example.com">ian@example.com</a></p>
+    </section>
 
-@media (max-width:950px) {
-  
-  nav .logo {
-    font-size:30px;
-  }
-  nav ul li {
-    padding:10px;
-    font-size:18px;
-  }
-  .content h1 {
-    font-size:50px;
-  }
-  .content h3 {
-    font-size:20px;
-  }
-  .content h4 {
-    font-size:15px;
-  }
-  
-}
-</style>
+    <footer>
+        <p>&copy; 2024 Ian Jure. All rights reserved.</p>
+    </footer>
+</body>
+</html>
