@@ -67,8 +67,21 @@
         }
 
         @media (min-width: 640px) {
+            .container {
+                flex-direction: row;
+            }
             .grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 639px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .grid {
+                width: 100%;
             }
         }
 
@@ -121,12 +134,12 @@
     <div class="container">
         <div class="profile-header">
             <img src="https://placehold.co/128x128" alt="Profile picture of Daniel Nguyen with a yellow background">
-            <h1>Ian Jure Macalisang</h1>
+            <h1>Ian Jure</h1>
             <div class="location">
                 <i class="fas fa-map-marker-alt"></i>
                 <span>Balingasag, Philippines</span>
             </div>
-            <p class="bio">I develop stuff.</p>
+            <p class="bio">I Develop Stuff.</p>
             <i class="fab fa-twitter"></i>
         </div>
 
