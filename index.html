@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Nguyen Profile</title>
+    <title>Ian Jure</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
@@ -21,11 +21,12 @@
 
         .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            align-items: flex-start;
             gap: 24px;
             max-width: 64rem;
             margin: 0 auto;
+            width: 100%;
         }
 
         .profile-header {
@@ -33,6 +34,7 @@
             flex-direction: column;
             align-items: center;
             gap: 12px;
+            flex: 1;
         }
 
         .profile-header img {
@@ -61,7 +63,7 @@
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 16px;
-            width: 100%;
+            flex: 2;
         }
 
         @media (min-width: 640px) {
@@ -119,12 +121,12 @@
     <div class="container">
         <div class="profile-header">
             <img src="https://placehold.co/128x128" alt="Profile picture of Daniel Nguyen with a yellow background">
-            <h1>Daniel Nguyen</h1>
+            <h1>Ian Jure Macalisang</h1>
             <div class="location">
                 <i class="fas fa-map-marker-alt"></i>
-                <span>Ho Chi Minh City</span>
+                <span>Balingasag, Philippines</span>
             </div>
-            <p class="bio">Founder. Maker.</p>
+            <p class="bio">I develop stuff.</p>
             <i class="fab fa-twitter"></i>
         </div>
 
@@ -188,8 +190,6 @@
                 <p>Uptime monitoring for teams</p>
             </div>
         </div>
-
-        <button class="button">Build your Indie Page</button>
     </div>
 </body>
 </html>
