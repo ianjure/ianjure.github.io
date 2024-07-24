@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Nguyen Profile</title>
+    <title>Ian Jure</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
@@ -35,6 +35,7 @@
             align-items: center;
             gap: 12px;
             flex: 1;
+            color: #9CA3AF
         }
 
         .profile-header img {
@@ -46,17 +47,7 @@
         .profile-header h1 {
             font-size: 2rem;
             font-weight: 700;
-        }
-
-        .profile-header .location, .profile-header .bio, .profile-header .twitter {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: #9CA3AF;
-        }
-
-        .profile-header .twitter i {
-            color: #9CA3AF;
+            color: white
         }
 
         .grid {
@@ -110,13 +101,22 @@
 
         .profile-card .header span:first-child {
             font-weight: 700;
+            font-size: 1.5rem;
         }
+        
+        .mini {
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: #10B981
+        }
+      
+        
 
         .status {
             font-size: 0.75rem;
             padding: 2px 8px;
             border-radius: 9999px;
-            color: white;
+            color: #1F2937;
         }
 
         .status.active {
@@ -141,74 +141,54 @@
 <body>
     <div class="container">
         <div class="profile-header">
-            <img src="https://placehold.co/128x128" alt="Profile picture of Daniel Nguyen with a yellow background">
-            <h1>Daniel Nguyen</h1>
+            <img src="https://i.imgur.com/g8ML5Gy.jpg">
+            <h1>Ian Jure</h1>
             <div class="location">
                 <i class="fas fa-map-marker-alt"></i>
-                <span>Ho Chi Minh City</span>
+                <span>Balingasag, Philippines</span>
             </div>
-            <p class="bio">Founder. Maker.</p>
+            <p class="bio">ML Developer. Data Scientist.</p>
             <i class="fab fa-twitter"></i>
         </div>
 
         <div class="grid">
             <a href="#" class="profile-card">
                 <div class="header">
-                    <span>ShotSolve</span>
-                    <span class="status active">Active</span>
+                    <span>Machine Learning Projects</span>
                 </div>
-                <p>Turn screenshots into insights</p>
+                <span class="mini">Python · Pytorch · Tensorflow</span>
+                <p>Code from scratch, neural networks, and more!</p>
             </a>
 
             <a href="#" class="profile-card">
                 <div class="header">
-                    <span>PDF Pals</span>
-                    <span class="status active">Active</span>
+                    <span>Computer Vision Projects</span>
                 </div>
-                <span>$2.5k/mo</span>
-                <p>Instantly chat with any PDF on your Mac</p>
+                <span class="mini">Python · OpenCV · CVZone</span>
+                <p>Object detection, segmentation, and some fun stuff!</p>
             </a>
 
             <a href="#" class="profile-card">
                 <div class="header">
-                    <span>Bolt AI</span>
-                    <span class="status active">Active</span>
+                    <span>Other Projects</span>
                 </div>
-                <p>Instant access to ChatGPT on any Mac app</p>
+                <span class="mini">Python · Streamlit · Typescript</span>
+                <p>From web applications to data visualization.</p>
             </a>
 
             <a href="#" class="profile-card">
                 <div class="header">
-                    <span>KTool</span>
-                    <span class="status active">Active</span>
+                    <span>Achievements</span>
                 </div>
-                <span>$1.3k/mo</span>
-                <p>Send web articles to Kindle</p>
+                <span class="mini">PinoySEO · GL Academy · Sololearn</span>
+                <p>Webinars, bootcamp, and coding certificates.</p>
             </a>
 
             <a href="#" class="profile-card">
                 <div class="header">
-                    <span>Daniel Nguyen's Blog</span>
-                    <span class="status active">Active</span>
+                    <span>Tech Blog</span>
                 </div>
-                <p>Random thoughts on indie hacking & building software products</p>
-            </a>
-
-            <a href="#" class="profile-card">
-                <div class="header">
-                    <span>The Clueless Solopreneur</span>
-                    <span class="status active">Active</span>
-                </div>
-                <p>Bootstrapping startups with a beginner's mind</p>
-            </a>
-
-            <a href="#" class="profile-card">
-                <div class="header">
-                    <span>StatusBoard</span>
-                    <span class="status discontinued">Discontinued</span>
-                </div>
-                <span>$25/mo</span>
-                <p>Uptime monitoring for teams</p>
+                <p>Random thoughts and tutorials.</p>
             </a>
         </div>
     </div>
